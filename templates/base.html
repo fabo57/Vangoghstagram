@@ -5,8 +5,14 @@
   <title>{{ Vangoghstagram }}</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
   <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+  <style media="screen">
+      body {
+      background-image: url("img/fondo.jpg");
+    }
+  </style>
 </head>
 <body>
+  <img src="img/logo.jpg" alt="logo" width="10px" alt="10px"/>
   <header>
     <h3> Vangoghstagram </h3>
   </header>
@@ -16,7 +22,7 @@
   <div class="row">
     <div class="tweleve columns">
       {% block content %}
-        
+
       {% endblock %}
     </div>
   </div>
