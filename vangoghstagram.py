@@ -8,17 +8,17 @@ CORS(app)
 
 
 @app.route("/")
-#def api_instagram ():
-#    headers = {
-#curl-F 'client_id=d2b00994cc8a4995989cfd98bb0004d3' \
-#    -F 'client_secret=03f128d0ccf3492e91d203d25ddc02bf ' \
-#    -F 'grant_type=authorization_code' \
-#    -F 'redirect_uri=http://127.0.0.1' \
-#    -F 'code=cff2fc0dca2c4c468a18bb8656b84615' \
-#    }
-#    reponse = requests.get("https://api.instagram.com/v1/tags/nofilter/media/recent?access_token=ACCESS_TOKEN")
+def api_instagram ():
+    headers = {
+    -F client_id='d2b00994cc8a4995989cfd98bb0004d3';
+    -F client_secret='03f128d0ccf3492e91d203d25ddc02bf';
+    -F grant_type='1766293168.d2b0099.55f84ffadb784a41acb6ef50ab556ab3';
+    -F redirect_uri='1766293168';
+    -F code=' cff2fc0dca2c4c468a18bb8656b84615'; 
+    }
+    reponse = requests.get("https://api.instagram.com/v1/tags/nofilter/media/recent?access_token=1766293168.d2b0099.55f84ffadb784a41acb6ef50ab556ab3")
 def hello():
-        return "Hola a todos"
+        return requests.get
 @app.route("/home")
 def home():
         return render_template("home.html")
